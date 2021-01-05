@@ -56,7 +56,7 @@ myColors <- t(myColors)
 myColors
 
 data %>% ggplot(aes(x=cases_total_100k, y=crimes_total_100k, color=district)) +
-  geom_point()+
+  geom_point(size=4)+
   labs(x="Corona cases per 100000 inhabitants", y="Crimes per 100000 inhabitants")+
   scale_colour_manual(values = myColors)
 
